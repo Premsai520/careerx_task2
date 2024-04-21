@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            margin: 0%;
+            border: 2px solid black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: auto;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .banner{
+            background-color: rgb(254, 117, 5);
+            margin: auto;   
+            padding-bottom: 0%;
+            border: 3px solid black;
+            margin-bottom: 0%;
+        }
+        .banner img{
+            display: block;
+        }
+        nav{
+            background-color: black;
+            margin-top: 0%;
+        }
+        .navbar{
+            margin-top: 0%;
+            padding-top: 1px;
+            padding-bottom: 2px;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+        li a:hover{
+            background-color: rgb(53, 53, 53);
+        }
+        .row{
+            border: 3px solid black;
+            width: 100%;
+            height: auto;
+        }
+        .one{
+            background-color: rgb(255, 224, 224);
+            width:33%;
+            height: 400px;
+            float: left;
+            border: 1px solid blue;
+        }
+        .two{
+            background-color: rgb(189, 189, 221);
+            width: 33%;
+            height: 400px;
+            float: left;
+            border: 1px solid blue;
+        }
+        .three{
+            background-color: rgb(146, 218, 146);
+            width: 33%;
+            height: 400px;
+            float: left;
+            border: 1px solid blue;
+        }
+        .ad{
+            border: 3px solid black;
+        }
+        .ad img{
+            display: block;
+        }
+        .row img{
+            margin-top: 15px;
+        }
+        p{
+            padding: 15px;
+        }
+        footer{
+            background-color: rgb(63, 63, 63);
+            margin-top: 0%;
+            padding: 1px;
+            font-size: large;
+            color: #fff;
+            font-weight: 500;
+        }
+        @media screen and (max-width: 999px) {
+            .row{
+                width: 100%;
+            }
+            .one ,.two{
+                width:49%;/* Adjust margin as needed */
+                height: 400px;
+            }
+            .three{
+               width: 100%;
+               height: 400px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .row{
+                width: 100%;
+            }
+            .one, .two, .three {
+            width:100%;
+            display: block;  /* Adjust margin as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="banner1.png" width="100%" alt="">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="one">
+                <img src="hands.jpg" height="200px" alt="Environment_Image">
+                <p>A fantastical image portrays colossal hands cradling an island oasis, complete with lush palm trees and a solitary boat, inviting viewers into a dreamlike world of mystery and serenity.</p>
+
+            </div>
+            <div class="two">
+                <img src="globe.webp" height="200px" alt="Globe-Image">
+                <p>In this captivating image, a pair of gentle hands cradle the Earth, symbolizing care and protection for our planet, while graceful butterflies flutter around, evoking a sense of harmony and interconnectedness with nature.                </p>
+            </div>
+            <div class="three">
+                <img src="hands2.webp" height="200px" alt="Hands_Image">
+                <p>In this thought-provoking image, two hands composed of lush greenery reach out to each other, echoing Michelangelo's "The Creation of Adam," symbolizing unity, connection, and the importance of environmental preservation.</p>
+            </div>
+        </div>
+        <div class="ad">
+            <img src="ad.jpg" width="100%" alt="advertisement">
+        </div>
+        <footer>
+            <p>CopyRights Reserved @psr</p>
+        </footer>
+    </div>
+</body>
+</html>
